@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('image.svg');
+   
+}
+ .input_fields{
+     justify-content: center;
+     align-items: center;
+     
+     transform: translate(-50%,-50%);
+     top: 50%;
+     left: 50%;
+     position: absolute;
+     color: #fff;
+ }
+
+ .input_fields input{
+     padding: 8px;
+     margin-bottom: 10px;
+     width: 100%;
+     
+ }
+
+ .input_fields input[type="button"]{
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     margin-top: 20px;
+     width:50%;
+     border: none;
+     margin-left: 50px;
+     background-color:violet;
+     cursor: pointer;
+    
+ }
