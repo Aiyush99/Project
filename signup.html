@@ -1,35 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Form</title>
-    <link rel="stylesheet"href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Signup Form</title>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-    <form>
-        <div class="input_fields">
-        Name
-        <br>
-        <input type="text"placeholder="Enter Your Name">
-        <br>
-        Surname
-        <br>
-        <input type="text"placeholder="Enter Your Surname">
-        <br>
-        Email
-        <br>
-        <input type="text"placeholder="Enter Your Email">
-        <br>
-        Password
-        <br>
-        <input type="text"placeholder="Enter Your Password">
-        <br>
-        <input type="button"value="Signup">
-        </div>
-        
-        
-    </form>
+	
+	<div>
+	<h1>Debbie</h1>
+	<img src="logo.png"class="logo">
+	</div>
+	
+	<img src="super_woman copy.svg">
+	<h2>To get help from Debbie <br>Sign up now !
+	</h2>
 
+	  <form id="form">
+		  
+		<div class="input_fields">
+	    <label id="lbl">Name </label><br>
+		<input type="text"placeholder="Your Name here" id="name"><br />
+		<span id="name_success_Msg"></span>
+		<span id="name_error_Msg"></span>
+	
+         
+        
+        <label id="lbl">Surname</label><br>
+		<input type="text" placeholder="Your Surname here" id="surname"><br />
+		<span id="surname_success_Msg"></span>
+		<span id="surname_error_Msg"></span>
+	
+		
+       
+        <label id="lbl">Email </label><br>
+		<input type="email" placeholder="Your Email here" id="email"><br />
+		<span id="email_success_Msg"></span>
+		<span id="email_error_Msg"></span>
+		
+		
+		
+
+        <label id="lbl">Password </label><br>
+		<input type="password" placeholder="Your Password here" id="password"><br />
+		<span id="pass_success_Msg"></span>
+		<span id="pass_error_Msg"></span>
+	 
+		
+		<input type="button"id="btn"value="Sign Up Now !">
+
+		<img src="like.svg"class="like">
+
+	</div>
+	</form>
+</div>
+	<script>
+   $(document).ready(function(){
+
+	$("#name").keyup(function(){
+			if(validateName()){
+				// if the email is validated
+				// set input email border green
+				$("#name").css("border","2px solid green");
+				// and set label 
+				$("#name_success_Msg").html("<p class='text-success'>Validated</p>");
+				
+			}else{
+				// if the email is not validated
+				// set border red
+				$("#name").css("border","2px solid red");
+				$("#name_error_Msg").html("<p class='text-danger'>Un-validated</p>");
+			}
+			
+		});
+
+		$("#surname").keyup(function(){
+			if(validateSurname()){
+				// if the surname is validated
+				// set input surname border green
+				$("#surname").css("border","2px solid green");
+				// and set label 
+				$("#surname_success_Msg").html("<p class='text-success'>Validated</p>");
+				
+			}else{
+				// if the surname is not validated
+				// set border red
+				$("#surname").css("border","2px solid red");
+				$("#surname_error_Msg").html("<p class='text-danger'>Un-validated</p>");
+			}
+			
+		});
+	
+		// use keyup event on email field
+		$("#email").keyup(function(){
+			if(validateEmail()){
+				// if the email is validated
+				// set input email border green
+				$("#email").css("border","2px solid green");
+				// and set label 
+				$("#email_success_Msg").html("<p class='text-success'>Validated</p>");
+				
+			}else{
+				// if the email is not validated
+				// set border red
+				$("#email").css("border","2px solid red");
+				$("#email_error_Msg").html("<p class='text-danger'>Un-validated</p>");
+				$("#email_error_Msg").style.display='none';
+
+				
+			}
+			
+		});
+		// use keyup event on password
+		$("#password").keyup(function(){
+			// check
+			if(validatePassword()){
+				// set input password border green
+				$("#password").css("border","2px solid green");
+				//set passMsg 
+				$("#pass_success_Msg").html("<p class='text-success'>Password validated</p>");
+			}else{
+					// set input password border red
+				$("#password").css("border","2px solid red");
+				//set passMsg 
+				$("#pass_error_Msg").html("<p class='text-danger'>Password not valid</p>");
+			}
+			
+		});
+	});
+
+	function validateName(){
+		// get value of input email
+		var name=$("#name").val();
+		// use reular expression
+		
+		 if(name.length<4){
+			 
+		 	return false;
+		 }else{
+			
+		 	return true;
+		 }
+
+	}
+
+	function validateSurname(){
+		// get value of input email
+		var surname=$("#surname").val();
+		// use reular expression
+		
+		 if(surname.length<4){
+		 	return false;
+		 }else{
+		 	return true;
+		 }
+
+	}
+
+
+	
+	function validateEmail(){
+		// get value of input email
+		var email=$("#email").val();
+		// use reular expression
+		 var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+		 if(reg.test(email)){
+		 	return true;
+			
+		 }else{
+			
+		 	return false;
+		 }
+
+	}
+	function validatePassword(){
+		//get input password value
+		var pass=$("#password").val();
+		// check it s length
+		if(pass.length > 7){
+			return true;
+		}else{
+			return false;
+		}
+
+	}
+
+	</script>
 </body>
 </html>
