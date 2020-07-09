@@ -1,0 +1,190 @@
+/* used to design the background of the website */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* the folowing code is for the body */
+body{
+    /*background-color: #B3B6F9;*/
+    background-color: red;
+    height: 100vh;
+}
+
+h2{
+/*    text-align: center;*/
+/*    margin-bottom: 150px;*/
+    /*color: #ffffff;*/
+    /*text-decoration-color: gray;*/
+    color: white;
+    /* for both horizontal and vertical alignment */
+    transform: translate(49%,-131%);
+    font-size: 30px;
+}
+
+/* used to design the logo image */
+/*
+.imgDivision{ 
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+*/
+
+.logoImg{
+    margin-top: 60px;
+    margin-left: 69px;
+    width: 70px;
+    height: 70px;
+}
+
+/*the below property is used to do the designing the text Debbie */
+.text{
+    align-content: center;
+    margin-left: 600px;
+    font-size: 20px;
+    color: #FCFCFF;
+    
+}
+
+/* used to design the super_woman image*/
+.img2 img{
+    width: 100px;
+    height: 100px;
+/*
+    float: left; 
+    display: block;
+    margin-left: 450px;
+    margin-right: auto;
+*/
+/*    font-size: 20px;*/
+    transform: translate(740%,0%);
+}
+
+/*the below code is for designing the text present in the firstParagraph class*/
+.firstParagraph{
+    font-size: 30px;
+    transform: translate(43%,0%);
+    color: white;
+}
+
+
+/*the below is used to design the second paragraph */
+.secondParagraph{
+    transform: translate(42%,0%);
+    font-size: 30px;
+    color: white;
+}
+
+/* the below property is used to design the  logout button*/
+.logoutButton{
+    transform: translate(85%,-800%);
+/*    font-size: 30px;*/
+    color: black;
+/*    border: 0;*/
+/*    background: transparent;*/
+/*    padding: 5px;*/
+}
+
+/*the below is used to design the logout button*/
+.buttonPadding{
+/*    padding: 10px;*/
+/*    width: 100%;*/
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    color: lightgray;
+/*    margin-right: 150px;*/
+    cursor: pointer;
+}
+
+
+/* this property is used to design the button */
+/*
+.button{
+    background-color: #B3B6F9; 
+    margin-left: 10px;
+    left: 100px;
+}
+*/
+
+
+
+/* the property below is used to design the text written below the superwoman image*/
+.text2{
+    font-size: 20px;
+    align-content: space-around;
+    color: aliceblue;
+}
+
+
+
+/*the below class is used for designing the hand */
+.img3 img{
+/*
+    margin-top: 400px;
+    margin-left: 200px;
+    margin-right: 150px;
+*/
+/*    align-content: center;*/
+    width: 50px;
+    height: 50px; 
+    transform: translate(30%);
+    margin-left: 749px;
+}
+
+/*the below design is for the weekly button*/
+/*.btn btn-secondary dropdown-toggle{*/
+.dropdown{
+    margin-left: 700px;
+    margin-top: 100px;
+    height: 50px;
+    width: 300px;    
+}
+
+/*.btn btn-secondary dropdown-toggle{*/
+#dropdownMenuButton{
+    color: purple;
+    text-transform: uppercase;
+    background: white;
+    width: 250px;
+    padding: 12px;
+    font-size: 25px;
+    border-radius: 10px;
+/*    border: 0;*/
+    border: 1px solid #979797
+}
+
+/*the below design is for the enter you pain record button */
+.enterPainRecord{
+/*
+    margin-left: 600px;
+    margin-top: 100px;
+    height: 50px;
+    width: 200px;   
+*/
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    color: lightgray;
+/*    margin-right: 150px;*/
+    cursor: pointer;
+    transform: translate(305%,-80%);
+}
+
+/*the below desing is for the update account button*/
+.updateAccount{
+/*
+    margin-left: 600px;
+    margin-top: 100px;
+    height: 50px;
+    width: 200px;  
+*/
+    background: transparent;
+    border: 0;
+    font-size: 30px;
+    color: lightgray;
+/*    margin-right: 150px;*/
+    cursor: pointer;      
+    transform: translate(347%,-80%);
+}
