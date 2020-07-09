@@ -1,190 +1,132 @@
 /* used to design the background of the website */
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* the folowing code is for the body */
-body{
-    /*background-color: #B3B6F9;*/
-    background-color: red;
-    height: 100vh;
+body {
+  background-color: #b3b6f9;
+
+  height: 100vh;
 }
 
-h2{
-/*    text-align: center;*/
-/*    margin-bottom: 150px;*/
-    /*color: #ffffff;*/
-    /*text-decoration-color: gray;*/
-    color: white;
-    /* for both horizontal and vertical alignment */
-    transform: translate(49%,-131%);
-    font-size: 30px;
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-/* used to design the logo image */
-/*
-.imgDivision{ 
-    width: 70px;
-    height: 70px;
-    float: left;
-}
-*/
-
-.logoImg{
-    margin-top: 60px;
-    margin-left: 69px;
-    width: 70px;
-    height: 70px;
+#logoImg {
+  margin-left: 0px;
 }
 
-/*the below property is used to do the designing the text Debbie */
-.text{
-    align-content: center;
-    margin-left: 600px;
-    font-size: 20px;
-    color: #FCFCFF;
-    
+.top-section img {
+  width: auto;
+  height: 50px;
+}
+#main-heading {
+  font-size: 25px;
+  margin-left: 5%;
+  color: #fff;
+  text-align: center;
 }
 
-/* used to design the super_woman image*/
-.img2 img{
-    width: 100px;
-    height: 100px;
-/*
-    float: left; 
-    display: block;
-    margin-left: 450px;
-    margin-right: auto;
-*/
-/*    font-size: 20px;*/
-    transform: translate(740%,0%);
+#logoutBtn {
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: lightgray;
+  float: right;
+  cursor: pointer;
 }
 
-/*the below code is for designing the text present in the firstParagraph class*/
-.firstParagraph{
-    font-size: 30px;
-    transform: translate(43%,0%);
-    color: white;
+.woman-image {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-/*the below is used to design the second paragraph */
-.secondParagraph{
-    transform: translate(42%,0%);
-    font-size: 30px;
-    color: white;
+#woman {
+  width: 100px;
+  height: 100px;
 }
 
-/* the below property is used to design the  logout button*/
-.logoutButton{
-    transform: translate(85%,-800%);
-/*    font-size: 30px;*/
-    color: black;
-/*    border: 0;*/
-/*    background: transparent;*/
-/*    padding: 5px;*/
+.second-heading {
+  text-align: center;
 }
 
-/*the below is used to design the logout button*/
-.buttonPadding{
-/*    padding: 10px;*/
-/*    width: 100%;*/
-    background: transparent;
-    border: 0;
-    font-size: 30px;
-    color: lightgray;
-/*    margin-right: 150px;*/
-    cursor: pointer;
+#firstParagraph {
+  color: #fff;
 }
 
-
-/* this property is used to design the button */
-/*
-.button{
-    background-color: #B3B6F9; 
-    margin-left: 10px;
-    left: 100px;
+#secondParagraph {
+  color: #fff;
+  margin-left: 11px;
 }
-*/
-
-
-
-/* the property below is used to design the text written below the superwoman image*/
-.text2{
-    font-size: 20px;
-    align-content: space-around;
-    color: aliceblue;
-}
-
-
 
 /*the below class is used for designing the hand */
-.img3 img{
-/*
-    margin-top: 400px;
-    margin-left: 200px;
-    margin-right: 150px;
-*/
-/*    align-content: center;*/
-    width: 50px;
-    height: 50px; 
-    transform: translate(30%);
-    margin-left: 749px;
+.hand-image {
+  text-align: center;
 }
 
+#hand {
+  width: 50px;
+  height: 50px;
+}
+
+canvas {
+  background-color: #fff;
+  height: 50vh;
+}
 /*the below design is for the weekly button*/
 /*.btn btn-secondary dropdown-toggle{*/
-.dropdown{
-    margin-left: 700px;
-    margin-top: 100px;
-    height: 50px;
-    width: 300px;    
+.btn {
+  margin-left: 32%;
+  margin-top: 50px;
+  height: 50px;
+  width: 300px;
+  text-align: center;
 }
 
 /*.btn btn-secondary dropdown-toggle{*/
-#dropdownMenuButton{
-    color: purple;
-    text-transform: uppercase;
-    background: white;
-    width: 250px;
-    padding: 12px;
-    font-size: 25px;
-    border-radius: 10px;
-/*    border: 0;*/
-    border: 1px solid #979797
+#dropdownMenuButton {
+  color: purple;
+  text-transform: uppercase;
+  background: white;
+  width: 250px;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 10px;
+
+  border: 1px solid #979797;
 }
 
-/*the below design is for the enter you pain record button */
-.enterPainRecord{
-/*
-    margin-left: 600px;
-    margin-top: 100px;
-    height: 50px;
-    width: 200px;   
-*/
-    background: transparent;
-    border: 0;
-    font-size: 30px;
-    color: lightgray;
-/*    margin-right: 150px;*/
-    cursor: pointer;
-    transform: translate(305%,-80%);
+.update {
+  text-align: center;
 }
 
 /*the below desing is for the update account button*/
-.updateAccount{
-/*
-    margin-left: 600px;
-    margin-top: 100px;
-    height: 50px;
-    width: 200px;  
-*/
-    background: transparent;
-    border: 0;
-    font-size: 30px;
-    color: lightgray;
-/*    margin-right: 150px;*/
-    cursor: pointer;      
-    transform: translate(347%,-80%);
+.updateAccount {
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: lightgray;
+
+  cursor: pointer;
+}
+
+.pain {
+  text-align: center;
+}
+
+.enterPainRecord {
+  background: transparent;
+  border: 0;
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
 }
